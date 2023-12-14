@@ -1,56 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Russell</title>
+  <head>
+    <title>Russell Mstowski</title>
+    <meta name="description" content="Experienced Software Engineer based in the Chicagoland Area. Previously @ Clearcover, Enova International, and BuildThis.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name=”robots” content="index, follow">
+    <meta charset="UTF-8">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120530537-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    gtag('config', 'UA-120530537-1');
-  </script>
+    <style>
+      .bg-purple:hover {
+        background-color: #b88cfb;
+      }
 
-  <style>
-    #name {
-      font-size: 24px;
-    }
+      .bg-hypetrunk:hover {
+        background-color: #40C8E0;
+      }
 
-    #github img {
-      position: absolute;
-      top: 10px;
-      right: 8px;
-      width: 3%;
-    }
+      .fade-in-header {
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
 
-    #email {
-      position: absolute;
-      left: 8px;
-      bottom: 10px;
-    }
+      .fade-in-links {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
 
-    #phone_number {
-      position: absolute;
-      right: 8px;
-      bottom: 10px;
-    }
+      .fade-in-projects {
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
 
-  </style>
-</head>
-<body>
-
-  <a id="name" href="https://www.linkedin.com/in/russell-mstowski/" target="_blank">Russell Mstowski</a> <br>
-  Software @ ... <br>
-  Chicago, IL
-
-  <a id="github" href="https://github.com/Russell-Mstowski" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt=""></a>
-
-  <a id="email" href="mailto:russell.mstowski@gmail.com">russell.mstowski@gmail.com</a>
-
-  <a id="phone_number" href="tel:7086013203">708-601-3203</a>
-
-</body>
+      @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-wrap bg-slate-900">
+      <aside class="h-screen w-96 flex flex-col flex-wrap place-content-between content-start left-0 sticky max-sm:h-min">
+        <header class="h-min w-full p-7 flex flex-col place-content-start content-start gap-3.5 fade-in-header">
+          <div class="w-8">
+            <a style="filter: invert(100%);" href="https://github.com/Russell-Mstowski" target="_blank"><img class="w-8" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt=""></a>
+          </div>
+          <div class="w-80 h-auto">
+            <h1 class="text-white font-bold text-4xl">Russell Mstowski</h1>
+          </div>
+          <div class="w-80 h-auto">
+            <p class="text-gray-500">
+              Experienced Software Engineer located in the Chicago Metropolitan Area.
+              
+              Previously @ Clearcover, Enova International, and BuildThis.
+            </p>
+          </div>
+        </header>
+        <nav class="h-min w-full flex flex-col place-content-start content-start p-7 gap-5 fade-in-links">  
+          <div>
+            <a class="text-white flex flex-wrap hover:opacity-80" href="https://www.linkedin.com/in/russell-mstowski/" target="_blank" href="">
+              <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="">
+              <p class="pl-3">Russell-Mstowski</p>
+            </a>
+          </div>
+          <div>
+            <a class="text-white flex flex-wrap hover:opacity-80" href="tel:7086013203" target="_blank" href="">
+              <img class="w-6 h-6" style="filter: invert(40%);" src="https://www.svgrepo.com/show/5236/phone-call.svg" alt="">
+              <p class="text-gray-500 pl-3" href="">708-601-3203</p>
+            </a>
+          </div>
+          <div>
+            <a class="text-white flex flex-wrap hover:opacity-80" href="mailto:russell.mstowski@gmail.com" target="_blank" href="">
+              <img class="w-6 h-6" style="filter: invert(40%);" src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="">
+              <p class="text-gray-500 pl-3" href="">russell.mstowski@gmail.com</p>
+            </a>
+          </div>
+        </nav>
+      </aside>
+      <div class="h-min p-7 flex flex-col flex-wrap gap-8 overflow-hidden place-content-start fade-in-projects max-sm:p-1" style="flex: 1 0 0px;">
+        <div class="h-min w-full flex-auto hover:bg-orange-500">
+          <div class="flex h-40 w-full">
+            <a class="w-full flex flex-col flex-wrap gap-3 self-center p-6" href="https://twitter.com/rCryptoReddit" target="_blank">
+              <h1 class="text-white text-4xl">@rCryptoReddit</h1>
+              <p class="text-gray-400">r/CryptoCurrency Twitter bot that tweets a top post every hour.</p>
+            </a>
+          </div>
+        </div>
+        <div class="h-min w-full flex-auto bg-purple">
+          <div class="flex h-40 w-full">
+            <a class="w-full flex flex-col flex-wrap gap-3 self-center p-6" href="https://russellsresiduals.com" target="_blank">
+              <h1 class="text-white text-4xl">Russell's Residuals</h1>
+              <p class="text-gray-400">E-commerce business selling items from different brands via Depop.</p>
+            </a>
+          </div>
+        </div>
+        <div class="h-min w-full flex-auto hover:bg-emerald-300">
+          <div class="flex h-40 w-full">
+            <a class="w-full flex flex-col flex-wrap gap-3 self-center p-6" href="https://ethpal.herokuapp.com" target="_blank">
+              <h1 class="text-white text-4xl">EthPal</h1>
+              <p class="text-gray-400">Send Ether on the Ropsten Testnet for fun.</p>
+            </a>
+          </div>
+        </div>
+        <div class="h-min w-full flex-auto bg-hypetrunk">
+          <div class="flex h-40 w-full">
+            <a class="w-full flex flex-col flex-wrap gap-3 self-center p-6">
+              <h1 class="text-white text-4xl">HypeTrunk</h1>
+              <p class="text-gray-400">Coming soon...</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
